@@ -1,13 +1,14 @@
 #!/bin/bash
 
 # configure my termenal
-. ./termenal/install_powerline.sh
-. ./termenal/install_terminal.sh
-. ./termenal/install_profile.sh
+. install_powerline.sh
+. install_terminal.sh
+. install_profile.sh
 
 # new vim
-cp 
-sed -i '$a\alias nvim="\"$(pwd)\"/neovim/nvim.appimage"' ~/.zsh
+sudo apt-get install fuse -y
+sudo modprobe fuse
+sed -i "\$a\alias nvim='$(pwd)/neovim/nvim.appimage'" ~/.zshrc
 cp -r neovim/nvim/ ~/.config/
 
 #install chrome

@@ -8,6 +8,8 @@ set -eux pipefail
 # Replace the configs with the saved one.
 sudo cp configs/.zshrc ~/.zshrc
 
+sudo apt-get install -y dconf-cli
+
 # Copy the modified Agnoster Theme
 sudo cp configs/pixegami-agnoster.zsh-theme ~/.oh-my-zsh/themes/pixegami-agnoster.zsh-theme
 
