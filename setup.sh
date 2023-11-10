@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # configure my termenal
-. /termenal/install_powerline.sh
-. /termenal/install_terminal.sh
-. /termenal/install_profile.sh
+. ./termenal/install_powerline.sh
+. ./termenal/install_terminal.sh
+. ./termenal/install_profile.sh
 
 # new vim
 cp 
